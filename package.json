@@ -1,0 +1,25 @@
+{
+  "name": "red-trees",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markizenlee/Red-trees.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/markizenlee/Red-trees/issues"
+  },
+  "homepage": "https://github.com/markizenlee/Red-trees#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
