@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
   const [message, setMessage] = useState("Loading...");
@@ -10,9 +11,11 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Red-trees test web app.</h1>
-    </div>
+      <div className="container">
+        <h1 className="text">
+          [Red Trees Description Text Goes Here.]
+        </h1>
+      </div>
   );
 }
 

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+.text {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  color: #333333;
+  text-align: center;
+}
