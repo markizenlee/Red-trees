@@ -1,12 +1,18 @@
 /* import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-.container {
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eacfca;
+}
+
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f9fafb;
 }
 
 .text {
@@ -15,4 +21,25 @@
     font-size: clamp(1.5rem, 2vw, 3rem);
     color: #333333;
     text-align: center;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .image-section {
+    height: 30vh;
+  }
 }
