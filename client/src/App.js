@@ -11,6 +11,21 @@ function App() {
       .then(data => setMessage(data.message));
   }, []);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const elements = document.querySelectorAll("section");
+    elements.forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
       <div>
         <section className="hero">
