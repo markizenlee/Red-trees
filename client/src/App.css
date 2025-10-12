@@ -1,13 +1,18 @@
+/* import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9fafb;
 }
 
 .text {
-  font-size: clamp(1.5rem, 2vw, 3rem);
-  color: #333333;
-  text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    color: #333333;
+    text-align: center;
 }
