@@ -33,9 +33,7 @@ function App() {
       <div>
         <section className="hero">
           <p className="text">
-            As a leader in the world of fashion accessories, RED TREES is dedicated to creating a dreamland of daily wear for consumers of all styles and lifestyles. 
-We deeply understand the desire for self-expression and the pursuit of diverse life experiences. Through our ingenious designs, we bring to life every individual’s boundless imagination of fashion. 
-Here, every customer can effortlessly create daily inspiration and shine with their own unique brilliance.
+            text
           </p>
         </section>
 

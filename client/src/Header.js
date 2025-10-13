@@ -1,21 +1,18 @@
 import "./Header.css";
+import logo_bw from "./assets/logo_bw.svg";
 
 function Header() {
     return (
         <header className="header">
-            <div className="top-row">
-                <a href="#">Contact Us</a>
-                <a href="#">Services</a>
-            </div>
-
             <div className="middle-row">
-
+                <img src={logo_bw} alt="Logo" className="logo" />
             </div>
 
             <div className="bottom-row">
                 <a href="#">Brand</a>
                 <a href="#">Product</a>
                 <a href="#">Stores</a>
+                <a href="#">Contact Us</a>
             </div>
         </header>
     );
