@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.css";
-import Header from "./Header";
-import sampleImage from "./assets/sample.png";
+
+import Header from "./components/Header";
+import Home from "./pages/Home";
 
 function App() {
   const [message, setMessage] = useState("Loading...");
@@ -28,20 +31,12 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Router>
       <Header />
-      <div>
-        <section className="hero">
-          <p className="text">
-            text
-          </p>
-        </section>
-
-        <section className="image-section">
-          <img src={sampleImage} alt="Sample Image" className="full-image" />
-        </section>
-      </div>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -36,6 +36,7 @@
     height: 70px;
     width: auto;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .bottom-row {
