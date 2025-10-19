@@ -30,7 +30,7 @@ jobs:
           zip -r build.zip build
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: latest-build
           path: client/build.zip
