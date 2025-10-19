@@ -24,11 +24,13 @@ jobs:
           npm install --legacy-peer-deps
           CI=false npm run build
 
-      - name: Upload full project to Windows Server
-        uses: appleboy/scp-action@v0.1.7
+      - name: Zip build folder
+        run: |
+          cd client
+          zip -r build.zip build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          source: "."
-          target: "D:/web-app/Red-trees"
+          name: latest-build
+          path: client/build.zip
