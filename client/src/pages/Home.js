@@ -1,5 +1,8 @@
 import "./Home.css";
 import heroImage from "../assets/home-hero.jpg";
+import brandImage from "../assets/home-brand.jpg";
+import productImage from "../assets/home-product.jpg";
+import storeImage from "../assets/home-store.jpg";
 
 function Home() {
     return (
@@ -15,6 +18,42 @@ function Home() {
 
                 <div className="image-container">
                     <img src={heroImage} alt="hero image" className="image" />
+                </div>
+            </section>
+
+            <section className="content">
+                <div className="image-container">
+                    <img src={brandImage} alt="brand image" className="image" />
+                </div>
+
+                <div className="text-container">
+                    <p className="text">
+                        Brand
+                    </p>
+                </div>
+            </section>
+
+            <section className="content">
+                <div className="text-container">
+                    <p className="text">
+                        Product
+                    </p>
+                </div>
+                
+                <div className="image-container">
+                    <img src={productImage} alt="product image" className="image" />
+                </div>
+            </section>
+
+            <section className="content">
+                <div className="image-container">
+                    <img src={storeImage} alt="store image" className="image" />
+                </div>
+
+                <div className="text-container">
+                    <p className="text">
+                        Store
+                    </p>
                 </div>
             </section>
         </div>
