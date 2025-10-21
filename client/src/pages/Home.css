@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 11vw;
+    padding-top: 180px;
     display: flex;
     align-items: center;
     height: 80vh;
@@ -8,7 +8,7 @@
 .text {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(1rem, 1.2vw, 3rem);
     color: #000;
     text-align: left;
 }
@@ -35,4 +35,34 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 110px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-container {
+        order: 2;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40vh;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+
+    .image-container {
+        order: 1;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40vh;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 2.5vw;
+        padding: 0 4rem;
+    }
 }

@@ -12,7 +12,7 @@ function Home() {
                         Here, every customer can effortlessly create daily inspiration and shine with their own unique brilliance.
                     </p>
                 </div>
-                
+
                 <div className="image-container">
                     <img src={heroImage} alt="hero image" className="image" />
                 </div>
