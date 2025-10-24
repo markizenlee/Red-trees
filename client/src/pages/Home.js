@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
+
 import "./Home.css";
+
 import heroImage from "../assets/home-hero.jpg";
 import brandImage from "../assets/home-brand.jpg";
 import productImage from "../assets/home-product.jpg";
@@ -31,17 +34,17 @@ function Home() {
                 </div>
 
                 <div className="text-container">
-                    <a className="text" href="#">
+                    <Link className="text" to="/product">
                         Product
-                    </a>
+                    </Link>
                 </div>
             </section>
 
             <section className="content">
                 <div className="text-container">
-                    <a className="text" href="#">
+                    <Link className="text" to="/brand">
                         Brand
-                    </a>
+                    </Link>
                 </div>
                 
                 <div className="image-container">
@@ -55,9 +58,9 @@ function Home() {
                 </div>
 
                 <div className="text-container">
-                    <a className="text" href="#">
+                    <Link className="text" to="/stores">
                         Store
-                    </a>
+                    </Link>
                 </div>
             </section>
         </div>

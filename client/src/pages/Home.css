@@ -69,7 +69,7 @@
     text-underline-offset: 0.8vw;
 }
 
-.content a:hover {
+.content Link:hover {
     color: #ec786d;
 }
 
