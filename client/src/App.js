@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import "./App.css";
 
@@ -10,8 +11,9 @@ import Brand from "./pages/Brand";
 import Stores from "./pages/Stores";
 import ContactUs from "./pages/ContactUs";
 
-function App() {
+function AppContent() {
   const [message, setMessage] = useState("Loading...");
+  const location = useLocation();
 
   useEffect(() => {
     fetch("/api/message")
@@ -32,10 +34,10 @@ function App() {
     elements.forEach(el => observer.observe(el));
 
     return () => observer.disconnect();
-  }, []);
+  }, [location.pathname]);
 
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -44,6 +46,14 @@ function App() {
         <Route path="/stores" element={<Stores />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }
