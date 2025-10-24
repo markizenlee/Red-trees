@@ -11,8 +11,8 @@ function Header() {
             </div>
 
             <div className="bottom-row">
-                <a href="#">Brand</a>
                 <a href="#">Product</a>
+                <a href="#">Brand</a>
                 <a href="#">Stores</a>
                 <a href="#">Contact Us</a>
             </div>

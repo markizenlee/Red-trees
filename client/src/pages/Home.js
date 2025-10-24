@@ -9,10 +9,14 @@ function Home() {
         <div>
             <section className="hero">
                 <div className="text-container">
+                    <p className="title">
+                        Red Trees — Global Jewelry for Everyday Brilliance <br />
+                    </p>
+
                     <p className="text">
-                        As a leader in the world of fashion accessories, RED TREES is dedicated to creating a dreamland of daily wear for consumers of all styles and lifestyles. <br /> <br />
-                        We deeply understand the desire for self-expression and the pursuit of diverse life experiences. Through our ingenious designs, we bring to life every individual’s boundless imagination of fashion. <br /> <br />
-                        Here, every customer can effortlessly create daily inspiration and shine with their own unique brilliance.
+                        Born in the heart of Dubai, Red Trees is a contemporary jewelry brand that redefines daily elegance. <br /><br />
+                        Our vision extends beyond adornment — we are building a global network of franchise partners who share our belief that beauty should be effortless, expressive, and attainable. <br /><br />
+                        Inspired by the vitality of modern life and the artistry of timeless design, Red Trees invites you to explore a world where jewelry becomes a language of confidence and individuality. <br /><br />
                     </p>
                 </div>
 
@@ -23,25 +27,25 @@ function Home() {
 
             <section className="content">
                 <div className="image-container">
-                    <img src={brandImage} alt="brand image" className="image" />
+                    <img src={productImage} alt="product image" className="image" />
                 </div>
 
                 <div className="text-container">
-                    <p className="text">
-                        Brand
-                    </p>
+                    <a className="text" href="#">
+                        Product
+                    </a>
                 </div>
             </section>
 
             <section className="content">
                 <div className="text-container">
-                    <p className="text">
-                        Product
-                    </p>
+                    <a className="text" href="#">
+                        Brand
+                    </a>
                 </div>
                 
                 <div className="image-container">
-                    <img src={productImage} alt="product image" className="image" />
+                    <img src={brandImage} alt="brand image" className="image" />
                 </div>
             </section>
 
@@ -51,9 +55,9 @@ function Home() {
                 </div>
 
                 <div className="text-container">
-                    <p className="text">
+                    <a className="text" href="#">
                         Store
-                    </p>
+                    </a>
                 </div>
             </section>
         </div>
