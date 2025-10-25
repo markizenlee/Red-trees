@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 import logo_bw from "../assets/logo_bw.svg";
+import insta from "../assets/instagram_icon.svg";
 
 function Footer() {
     return (
@@ -14,10 +15,13 @@ function Footer() {
             </div>
 
             <div className="right-section">
-                <Link to="/product">Product</Link>
-                <Link to="/brand">Brand</Link>
-                <Link to="/stores">Stores</Link>
-                <Link to="/contact-us">Contact Us</Link>
+                <Link to="https://www.instagram.com/redtreesuae/">
+                    <img src={insta} alt="instagram" className="insta" />
+                </Link>
+
+                <p className="text">
+                    redtreesuae@hotmail.com
+                </p>
             </div>
         </footer>
     );

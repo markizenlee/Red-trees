@@ -1,65 +1,83 @@
 .footer {
     width: 100%;
-    background-color: #d08469;
+    background-color: #f4ebe8;
     border-top: 1px solid #ddd;
     display: flex;
-    height: 15vw;
+    height: 10vw;
     align-items: center;
 }
 
-.footer a {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: #000;
-    font-size: 1.5rem;
-    letter-spacing: 0.02rem;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.footer a:hover {
-    color: #a83e3a;
-    text-decoration: underline;
-    text-underline-offset: 0.3vw;
-}
-
 .footer .left-section {
-    width: 40%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    padding: 4vw 12vw;
+    padding: 2vw 25vw 2vw 0vw;
 }
 
 .footer .right-section {
-    width: 60%;
+    width: 40%;
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    padding: 0vw 12vw;
+    box-sizing: border-box;
+    padding: 0 6vw;
 }
-
 
 .footer .logo {
     height: 100%;
     width: auto;
     object-fit: contain;
     cursor: pointer;
+    display: block;
 }
 
-@media (max-width: 768px) {
+.footer .insta {
+    height: 3vw;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    display: block;
+}
+
+.footer .text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5vw;
+    letter-spacing: 0.02rem;
+}
+
+@media (max-width: 992px) {
     .footer {
-        height: 40vw;
+        height: 30vw;
         justify-content: center;
     }
 
     .footer .left-section {
-        width: 100%;
-        padding: 10vw;
+        width: 50%;
+        padding: 6vw;
     }
     
     .footer .right-section {
-        display: none;
+        width: 50%;
+        padding: 8vw 0 2vw 0;
+        flex-direction: column;
+    }
+
+    .footer .logo {
+        height: 100%;
+    }
+
+    .footer .insta {
+        height: 8vw;
+    }
+
+    .footer .text {
+        font-size: 3vw;
     }
 }
