@@ -51,6 +51,7 @@
 @media (max-width: 768px) {
     .footer {
         height: 40vw;
+        justify-content: center;
     }
 
     .footer .left-section {
