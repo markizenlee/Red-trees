@@ -3,22 +3,62 @@
     background-color: #d08469;
     border-top: 1px solid #ddd;
     display: flex;
-    height: 20vw;
+    height: 15vw;
     align-items: center;
 }
 
 .footer a {
     font-family: "Quicksand", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     color: #000;
     font-size: 1.5rem;
     letter-spacing: 0.02rem;
-    transition: color 0.3s ease text-decoration 0.3s ease;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .footer a:hover {
     color: #a83e3a;
     text-decoration: underline;
     text-underline-offset: 0.3vw;
+}
+
+.footer .left-section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4vw 12vw;
+}
+
+.footer .right-section {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0vw 12vw;
+}
+
+
+.footer .logo {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 40vw;
+    }
+
+    .footer .left-section {
+        width: 100%;
+        padding: 10vw;
+    }
+    
+    .footer .right-section {
+        display: none;
+    }
 }

@@ -69,6 +69,10 @@
     text-underline-offset: 0.8vw;
 }
 
+.content a {
+    transition: color 0.3s ease;
+}
+
 .content a:hover {
     color: #ec786d;
 }

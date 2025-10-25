@@ -25,21 +25,21 @@
     color: #ec786d;
 }
 
-.middle-row {
+.header .middle-row {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 1rem;
 }
 
-.logo {
+.header .logo {
     height: 70px;
     width: auto;
     object-fit: contain;
     cursor: pointer;
 }
 
-.bottom-row {
+.header .bottom-row {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@
         font-size: 0.8rem;
     }
 
-    .logo {
+    .header .logo {
         height: 50px;
     }
 }

@@ -10,6 +10,7 @@ import Product from "./pages/Product";
 import Brand from "./pages/Brand";
 import Stores from "./pages/Stores";
 import ContactUs from "./pages/ContactUs";
+import Footer from "./components/Footer";
 
 function AppContent() {
   const [message, setMessage] = useState("Loading...");
@@ -46,6 +47,7 @@ function AppContent() {
         <Route path="/stores" element={<Stores />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
+      <Footer />
     </>
   );
 }
