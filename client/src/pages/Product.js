@@ -1,15 +1,11 @@
 import "./Product.css";
 
+import productImage from "../assets/home-product.jpg";
+
 function Product() {
     return (
-        <div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <h1>Product Page</h1>
+        <div className="product">
+            <img src={productImage} alt="product image" className="image" />
         </div>
     );
 }

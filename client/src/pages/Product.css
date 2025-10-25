@@ -1,0 +1,13 @@
+.product {
+    padding-top: 150px;
+}
+
+.product .image {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .product {
+        padding-top: 125px;
+    }
+}
