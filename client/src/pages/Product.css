@@ -1,5 +1,5 @@
 .product {
-    padding-top: 150px;
+    padding-top: var(--header-height);
 }
 
 .product .image {

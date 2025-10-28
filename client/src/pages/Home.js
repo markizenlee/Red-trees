@@ -9,7 +9,7 @@ import storeImage from "../assets/home-store.jpg";
 
 function Home() {
     return (
-        <div>
+        <div className="home-page">
             <section className="hero">
                 <div className="text-container">
                     <p className="title">

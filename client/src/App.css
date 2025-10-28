@@ -1,6 +1,10 @@
 /* import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
 
+:root {
+    --header-height: calc(88px + 4rem);
+}
+
 body {
     padding: 0;
     box-sizing: border-box;
