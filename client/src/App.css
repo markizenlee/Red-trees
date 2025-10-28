@@ -3,6 +3,7 @@
 
 :root {
     --header-height: calc(88px + 4rem);
+    --mobile-header-height: calc(62px + 3rem);
 }
 
 body {

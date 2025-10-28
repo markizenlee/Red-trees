@@ -2,14 +2,16 @@
     min-height: 85vh;
     padding: calc(var(--header-height) + 4vw) 0 0 0;
     box-sizing: border-box;
+    display: flex;
 }
 
 .store-page .navigation {
     width: 10vw;
     border-right: 1px solid #8d7979;
     padding: 3vw 0vw 3vw 8vw;
-    position: sticky;
+    position: fixed;
     height: 2vw;
+    z-index: 100;
 }
 
 .store-page .navigation ul {
@@ -30,4 +32,91 @@
 
 .store-page .navigation a:hover {
     color: #f28177;
+}
+
+.store-page .store-content {
+    width: 85vw;
+    margin-left: 15vw;
+    padding-left: 4vw;
+}
+
+.store-page .store-content .content {
+    display: flex;
+}
+
+.store-page .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1 1 0;
+    height: 60vh;
+    padding: 0 2vw 0 0;
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+
+.store-page .image-container {
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    height: 60vh;
+    overflow: hidden;
+    margin: 0 2vw 10vw 0;
+    max-width: 50vw;
+}
+
+.store-page .image {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.store-page .title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1vw;
+    color: #000;
+    text-align: right;
+    padding: 0 4vw;
+    margin: 0;
+}
+
+.store-page .text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #000;
+    text-align: right;
+    padding: 0 4vw;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .store-page {
+        padding: calc(var(--mobile-header-height) + 4vw) 0 0 0;
+    }
+
+    .store-page .navigation {
+        margin-left: 28vw;
+        width: 40vw;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .store-page .navigation ul {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .store-page .navigation ul li {
+        display: inline-block;
+        margin-right: 3vw;
+    }
+
+    .store-page .navigation a {
+        font-size: 2.5vw;
+    }
 }
