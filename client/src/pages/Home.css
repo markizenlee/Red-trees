@@ -83,7 +83,7 @@
         box-sizing: border-box;
         width: 100%;
         height: 40vh;
-        padding: 0rem 0rem 1rem 0rem;
+        padding: 0 0 1rem 0;
     }
 
     .home-page .image-container {
@@ -91,7 +91,7 @@
         box-sizing: border-box;
         width: 100%;
         height: 40vh;
-        padding: 1rem 0rem 1rem 0rem;
+        padding: 0 0 1rem 0;
     }
 
     .home-page .hero {
