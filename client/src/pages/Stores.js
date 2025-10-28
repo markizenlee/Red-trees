@@ -1,4 +1,4 @@
-import { Link, Routes, Route } from "react-router-dom";
+import { Link, Routes, Route, Navigate } from "react-router-dom";
 
 import "./Stores.css";
 
@@ -22,6 +22,8 @@ function Stores() {
 
             <main className="store-content">
                 <Routes>
+                    <Route index element={<Navigate to="dubai" replace />} />
+
                     <Route path="dubai" element={<DubaiStore />} />
                     <Route path="sharjah" element={<SharjahStore />} />
                 </Routes>

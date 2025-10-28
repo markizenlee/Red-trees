@@ -1,9 +1,33 @@
 .store-page {
     min-height: 85vh;
-    padding: var(--header-height) 0 0 0;
+    padding: calc(var(--header-height) + 4vw) 0 0 0;
     box-sizing: border-box;
 }
 
 .store-page .navigation {
-    flex: 0 0 220px;
+    width: 10vw;
+    border-right: 1px solid #8d7979;
+    padding: 3vw 0vw 3vw 8vw;
+    position: sticky;
+    height: 2vw;
+}
+
+.store-page .navigation ul {
+    list-style: none;
+    padding: 0 4vw;
+    margin: 0;
+    text-align: right;
+}
+
+.store-page .navigation a {
+    font-family: Quicksand;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.store-page .navigation a:hover {
+    color: #f28177;
 }
