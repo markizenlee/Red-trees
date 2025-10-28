@@ -95,7 +95,7 @@
     }
 
     .home-page .hero {
-        padding-top: var(--mobile-header-height);
+        padding-top: calc(var(--mobile-header-height) + 4vw);
         flex-direction: column;
         height: auto;
     }
