@@ -1,6 +1,6 @@
 .brand-page {
     height: 82vh;
-    padding: var(--header-height) 0 0 0;
+    padding: var(--header-height) 0 var(--footer-height) 0;
     box-sizing: border-box;
 }
 
