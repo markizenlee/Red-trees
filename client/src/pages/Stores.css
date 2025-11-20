@@ -1,5 +1,5 @@
 .store-page {
-    min-height: 85vh;
+    min-height: 82vh;
     padding: calc(var(--header-height) + 4vw) 0 0 0;
     box-sizing: border-box;
     display: flex;
