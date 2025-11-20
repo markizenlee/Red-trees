@@ -36,7 +36,7 @@
     padding: 2vw;
     background: rgba(250, 237, 234, 0.4);
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.08);
     transition: all 0.8s ease;
 }
 
@@ -72,12 +72,42 @@
     .brand-page .hero {
         padding: 1.5vh 0 0 0;
         width: 100%;
-        height: 40vh;
+        height: auto;
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .brand-page .hero::after {
         background: rgba(255, 255, 255, 0);
         backdrop-filter: blur(0px);
+    }
+
+    .brand-page .text-container {
+        position: static;
+        height: auto;
+        margin: 2vh 0;
+        padding: 4vh 0;
+        max-height: 40vh;
+        max-width: 80vw;
+        background: rgba(241, 178, 163, 0.5);
+        border-radius: 10px;
+        box-shadow: none;
+    }
+
+    .brand-page .text-container .text {
+        font-size: 2vw;
+        padding: 0 4vw;
+    }
+
+    .brand-page .text-container:hover {
+        transform: none;
+        left: auto;
+        top: auto;
+    }
+
+    .brand-page .text-container:hover .text {
+        font-weight: 300;
+        font-size: 2vw;
     }
 }
