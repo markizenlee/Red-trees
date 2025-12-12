@@ -15,7 +15,7 @@ function DubaiStore() {
 
                     <p className="text">
                         First Floor <br /><br />
-                        TEL: (0455) 247 86
+                        TEL: 04-5524786
                     </p>
                 </div>
 
@@ -32,7 +32,7 @@ function DubaiStore() {
 
                     <p className="text">
                         Ground Floor <br /><br />
-                        TEL: (0422) 166 88
+                        TEL: 04-2216688
                     </p>
                 </div>
 
@@ -49,7 +49,7 @@ function DubaiStore() {
 
                     <p className="text">
                         Ground Floor <br /><br />
-                        TEL: (0422) 844 14
+                        TEL: 04-2284414
                     </p>
                 </div>
 
@@ -67,7 +67,7 @@ function DubaiStore() {
                     <p className="text">
                         Ground Floor <br />
                         Shop number DHG06 <br /><br />
-                        TEL: (0455) 836 98
+                        TEL: 04-5583698
                     </p>
                 </div>
 
@@ -85,7 +85,7 @@ function DubaiStore() {
                     <p className="text">
                         Level 2 <br />
                         Way to Metro Station <br /><br />
-                        TEL: (0444) 569 67
+                        TEL: 04-4456967
                     </p>
                 </div>
 

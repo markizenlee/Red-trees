@@ -13,7 +13,6 @@ function SharjahStore() {
             
                     <p className="text">
                         Ground Floor <br /><br />
-                        TEL: (0544) 942 915
                     </p>
                 </div>
             
@@ -30,7 +29,7 @@ function SharjahStore() {
             
                     <p className="text">
                         First Floor <br /><br />
-                        TEL: (0655) 222 88
+                        TEL: 06-5522288
                     </p>
                 </div>
             
@@ -47,7 +46,7 @@ function SharjahStore() {
             
                     <p className="text">
                         Ground Floor <br /><br />
-                        TEL: (0655) 000 18
+                        TEL: 06-5500018
                     </p>
                 </div>
             
