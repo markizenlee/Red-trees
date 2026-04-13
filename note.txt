@@ -1,0 +1,4 @@
+To keep the website up and running, do:
+
+1. Update GitHub Token every 90 days
+2. Periodic push every 90 days to prevent expired artifacts
