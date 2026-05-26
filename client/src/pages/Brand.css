@@ -67,6 +67,7 @@
     .brand-page {
         height: 87vh;
         padding: var(--mobile-header-height) 0 0 0;
+        box-sizing: border-box;
     }
 
     .brand-page .hero {
