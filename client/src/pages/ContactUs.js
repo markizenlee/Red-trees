@@ -31,7 +31,7 @@ function ContactUs() {
                         </span>
 
                         <p className="text">
-                            []
+                            04-2342600
                         </p>
                     </div>
 
@@ -41,7 +41,7 @@ function ContactUs() {
                         </span>
 
                         <p className="text">
-                            @redtrees_jewelry
+                            @redtreesuae
                         </p>
                     </div>
                 </div>

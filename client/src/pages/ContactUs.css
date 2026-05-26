@@ -1,36 +1,61 @@
 .contact-us-page {
     height: 82vh;
     padding: var(--header-height) 0 var(--footer-height) 0;
+    box-sizing: border-box;
 }
 
 .contact-us-page .hero {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    position: relative;
 }
 
 .contact-us-page .text-area {
     flex: 0 0 40%;
     box-sizing: border-box;
     padding-top: 5vh;
-    padding-left: 5vw;
+    padding-left: 3vw;
     padding-right: 10vw;
     display: flex;
     flex-direction: column;
     text-align: right;
 }
 
+.contact-us-page .heading-container {
+    margin-bottom: 4vh;
+}
+
 .contact-us-page .heading-container .title {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
 
 .contact-us-page .heading-container .text {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
+    font-size: 1.1vw;
+    color: #7c7979;
+}
+
+.contact-us-page .text-container {
+    margin-bottom: 2vh;
+}
+
+.contact-us-page .text-container .title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
     font-size: 1vw;
-    color: #524e4ead;
+    color: #a09292;
+}
+
+.contact-us-page .text-container .text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.1vw;
+    color: #000000;
 }
