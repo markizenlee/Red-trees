@@ -2,16 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
 
 :root {
-    --header-height: calc(88px + 4rem);
-    --mobile-header-height: calc(62px + 3rem);
+    --header-height: 152px;
+    --mobile-header-height: 110px;
     --footer-height: 18vh;
     --mobile-footer-height: 30vh;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
 body {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #fcefed;
+    overflow-x: hidden;
 }
 
 /* fade-in animation */

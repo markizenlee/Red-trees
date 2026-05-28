@@ -26,10 +26,10 @@
 }
 
 .header .middle-row {
-    width: 100%;
+    height: 112px;
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    align-items: center;
 }
 
 .header .logo {
@@ -40,14 +40,15 @@
 }
 
 .header .bottom-row {
+    height: 39px;
     width: 100%;
+    padding: 0 4vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     max-width: 1400px;
     border-top: 1px solid #ddd;
-    padding: 0.5rem 4vw;
 }
 
 @media (max-width: 992px) {
@@ -55,7 +56,15 @@
         font-size: 0.8rem;
     }
 
+    .header .middle-row {
+        height: 82px;
+    }
+
     .header .logo {
         height: 50px;
+    }
+
+    .header .bottom-row {
+        height: 28px;
     }
 }
