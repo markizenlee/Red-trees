@@ -94,7 +94,7 @@
 
 @media (max-width: 992px) {
     .store-page {
-        padding: calc(var(--mobile-header-height) + 4vw) 0 0 0;
+        padding: var(--mobile-header-height) 0 0 0;
     }
 
     .store-page .navigation {
