@@ -8,11 +8,19 @@
     --mobile-footer-height: 30vh;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #fcefed;
+    overflow-x: hidden;
 }
 
 /* fade-in animation */
