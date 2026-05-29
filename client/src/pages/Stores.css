@@ -92,6 +92,11 @@
     margin: 0;
 }
 
+.map-section {
+    height: calc(82vh - 152px);
+    background-color: #4e403e;
+}
+
 @media (max-width: 992px) {
     .store-page {
         padding: var(--mobile-header-height) 0 0 0;
@@ -170,5 +175,9 @@
     .store-page .text {
         text-align: center;
         font-size: 2.5vw;
+    }
+
+    .map-section {
+        height: 50vh;
     }
 }

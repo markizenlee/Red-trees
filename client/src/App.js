@@ -31,7 +31,7 @@ function AppContent() {
       });
     }, { threshold: 0.3 });
 
-    const elements = document.querySelectorAll("section");
+    const elements = document.querySelectorAll(".fade-section");
     elements.forEach(el => observer.observe(el));
 
     return () => observer.disconnect();

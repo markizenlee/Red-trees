@@ -10,7 +10,7 @@ import storeImage from "../assets/home-store.jpg";
 function Home() {
     return (
         <div className="home-page">
-            <section className="hero">
+            <section className="hero fade-section">
                 <div className="text-container">
                     <p className="title">
                         Red Trees — Global Jewelry for Everyday Brilliance <br />
@@ -28,7 +28,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="content">
+            <section className="content fade-section">
                 <div className="image-container">
                     <img src={productImage} alt="product image" className="image" />
                 </div>
@@ -40,7 +40,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="content">
+            <section className="content fade-section">
                 <div className="text-container">
                     <Link className="text" to="/brand">
                         Brand
@@ -52,7 +52,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="content">
+            <section className="content fade-section">
                 <div className="image-container">
                     <img src={storeImage} alt="store image" className="image" />
                 </div>

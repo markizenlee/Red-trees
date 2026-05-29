@@ -7,27 +7,33 @@ import SharjahStore from "./stores/SharjahStore";
 
 function Stores() {
     return (
-        <div className="store-page">
-            <nav className="navigation">
-                <ul>
-                    <li>
-                        <Link to="/stores/dubai">Dubai</Link>
-                    </li>
+        <div>
+            <section className="store-page">
+                <nav className="navigation">
+                    <ul>
+                        <li>
+                            <Link to="/stores/dubai">Dubai</Link>
+                        </li>
 
-                    <li>
-                        <Link to="/stores/sharjah">Sharjah</Link>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <Link to="/stores/sharjah">Sharjah</Link>
+                        </li>
+                    </ul>
+                </nav>
 
-            <main className="store-content">
-                <Routes>
-                    <Route index element={<Navigate to="dubai" replace />} />
+                <div className="store-content">
+                    <Routes>
+                        <Route index element={<Navigate to="dubai" replace />} />
 
-                    <Route path="dubai" element={<DubaiStore />} />
-                    <Route path="sharjah" element={<SharjahStore />} />
-                </Routes>
-            </main>
+                        <Route path="dubai" element={<DubaiStore />} />
+                        <Route path="sharjah" element={<SharjahStore />} />
+                    </Routes>
+                </div>
+            </section>
+
+            <section className="map-section">
+                
+            </section>
         </div>
     );
 }
