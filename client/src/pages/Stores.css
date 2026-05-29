@@ -6,11 +6,12 @@
 }
 
 .store-page .navigation {
+    position: sticky;
+    top: calc(var(--header-height) + 4vw);
     width: 10vw;
     border-right: 1px solid #8d7979;
     padding: 3vw 0vw 3vw 8vw;
-    position: fixed;
-    height: 2vw;
+    height: 6vh;
     z-index: 100;
 }
 
@@ -103,6 +104,8 @@
     }
 
     .store-page .navigation {
+        position: fixed;
+        top: var(--mobile-header-height);
         width: 100%;
         height: auto;
         border-right: none;
@@ -178,6 +181,6 @@
     }
 
     .map-section {
-        height: 50vh;
+        height: 40vh;
     }
 }
