@@ -95,7 +95,6 @@
 
 .map-section {
     height: calc(82vh - 152px);
-    background-color: #4e403e;
 }
 
 @media (max-width: 992px) {

@@ -4,6 +4,7 @@ import "./Stores.css";
 
 import DubaiStore from "./stores/DubaiStore";
 import SharjahStore from "./stores/SharjahStore";
+import StoreMap from "../components/StoreMap";
 
 function Stores() {
     return (
@@ -32,7 +33,7 @@ function Stores() {
             </section>
 
             <section className="map-section">
-                
+                <StoreMap />
             </section>
         </div>
     );
