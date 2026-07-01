@@ -13,14 +13,7 @@ import ContactUs from "./pages/ContactUs";
 import Footer from "./components/Footer";
 
 function AppContent() {
-  const [message, setMessage] = useState("Loading...");
   const location = useLocation();
-
-  useEffect(() => {
-    fetch("/api/message")
-      .then(res => res.json())
-      .then(data => setMessage(data.message));
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
