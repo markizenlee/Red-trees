@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { Link, Routes, Route, Navigate } from "react-router-dom";
 
 import "./Stores.css";
@@ -7,6 +8,23 @@ import SharjahStore from "./stores/SharjahStore";
 import StoreMap from "../components/StoreMap";
 
 function Stores() {
+    const [stores, setStores] = useState([]);
+
+    useEffect(() => {
+        async function fetchStores() {
+            try {
+                const response = await fetch("/api/stores");
+                const data = await response.json();
+
+                setStores(data);
+            } catch (error) {
+                console.error("Error fetching stores: ", error);
+            }
+        }
+
+        fetchStores();
+    }, []);
+
     return (
         <div>
             <section className="store-page">
