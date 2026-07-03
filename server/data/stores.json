@@ -1,7 +1,7 @@
 [
     {
         "id": "dubai-01",
-        "city": "Dubai",
+        "city": "dubai",
         "storeNumber": 1,
         "name": "Dubai Burjuman Center",
         "lat": 25.252422,
@@ -11,7 +11,7 @@
 
     {
         "id": "dubai-02",
-        "city": "Dubai",
+        "city": "dubai",
         "storeNumber": 2,
         "name": "Dubai Al Ghurair Center",
         "lat": 25.267130,
@@ -21,7 +21,7 @@
 
     {
         "id": "dubai-03",
-        "city": "Dubai",
+        "city": "dubai",
         "storeNumber": 3,
         "name": "Dubai Arabian Center",
         "lat": 25.234820,
@@ -31,7 +31,7 @@
 
     {
         "id": "dubai-04",
-        "city": "Dubai",
+        "city": "dubai",
         "storeNumber": 4,
         "name": "Dubai Dragon Mart 1",
         "lat": 25.175478,
@@ -41,7 +41,7 @@
 
     {
         "id": "dubai-05",
-        "city": "Dubai",
+        "city": "dubai",
         "storeNumber": 5,
         "name": "Dubai Mall",
         "lat": 25.198629,
@@ -51,7 +51,7 @@
 
     {
         "id": "sharjah-01",
-        "city": "Sharjah",
+        "city": "sharjah",
         "storeNumber": 1,
         "name": "Sharjah Sahara Center",
         "lat": 25.297705,
@@ -61,7 +61,7 @@
 
     {
         "id": "sharjah-02",
-        "city": "Sharjah",
+        "city": "sharjah",
         "storeNumber": 2,
         "name": "Sharjah City Center",
         "lat": 25.324959,
@@ -71,7 +71,7 @@
 
     {
         "id": "sharjah-03",
-        "city": "Sharjah",
+        "city": "sharjah",
         "storeNumber": 3,
         "name": "Sharjah Mega Mall",
         "lat": 25.344789,

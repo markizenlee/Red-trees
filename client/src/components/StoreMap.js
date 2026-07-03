@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { APIProvider, Map, Marker, InfoWindow } from "@vis.gl/react-google-maps";
 
 const MOBILE_BREAKPOINT = 992;
@@ -6,6 +7,21 @@ const defaultZoom = window.innerWidth < MOBILE_BREAKPOINT ? 11 : 12;
 
 function StoreMap({ stores }) {
     const [selectedStore, setSelectedStore] = useState(null);
+    const location = useLocation();
+    
+    useEffect(() => {
+        if (!stores.length) return;
+
+        if (location.hash) {
+            const id = location.hash.substring(1);
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        }
+    }, [stores, location]);
 
     function renderPopup() {
         if (!selectedStore) {
@@ -19,6 +35,10 @@ function StoreMap({ stores }) {
             >
                 <div>
                     <h3>{selectedStore.name}</h3>
+
+                    <a href={`/stores/${selectedStore.city}#${selectedStore.id}`}>
+                        See more →
+                    </a>
                 </div>
             </InfoWindow>
         );

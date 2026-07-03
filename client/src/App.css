@@ -21,6 +21,7 @@ body {
     box-sizing: border-box;
     background-color: #fcefed;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* fade-in animation */

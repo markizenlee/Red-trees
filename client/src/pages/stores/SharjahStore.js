@@ -5,7 +5,7 @@ import storeS03Image from "../../assets/store-S03.jpg";
 function SharjahStore() {
     return (
         <div>
-            <section className="content fade-section">
+            <section className="content fade-section" id="sharjah-01">
                 <div className="text-container">
                     <p className="title">
                         Sharjah Sahara Center
@@ -21,7 +21,7 @@ function SharjahStore() {
                 </div>
             </section>
 
-            <section className="content fade-section">
+            <section className="content fade-section" id="sharjah-02">
                 <div className="text-container">
                     <p className="title">
                         Sharjah City Center
@@ -38,7 +38,7 @@ function SharjahStore() {
                 </div>
             </section>
 
-            <section className="content fade-section">
+            <section className="content fade-section" id="sharjah-03">
                 <div className="text-container">
                     <p className="title">
                         Sharjah Mega Mall
