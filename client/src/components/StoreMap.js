@@ -1,9 +1,29 @@
-import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+import React, { useState } from "react";
+import { APIProvider, Map, Marker, InfoWindow } from "@vis.gl/react-google-maps";
 
 const MOBILE_BREAKPOINT = 992;
 const defaultZoom = window.innerWidth < MOBILE_BREAKPOINT ? 11 : 12;
 
 function StoreMap({ stores }) {
+    const [selectedStore, setSelectedStore] = useState(null);
+
+    function renderPopup() {
+        if (!selectedStore) {
+            return null;
+        }
+
+        return (
+            <InfoWindow
+                position={{ lat: selectedStore.lat, lng: selectedStore.lng}}
+                onCloseClick={() => setSelectedStore(null)}
+            >
+                <div>
+                    <h3>{selectedStore.name}</h3>
+                </div>
+            </InfoWindow>
+        );
+    }
+
     return (
         <APIProvider apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
             <Map
@@ -18,8 +38,11 @@ function StoreMap({ stores }) {
                     <Marker
                         key={store.id}
                         position={{ lat: store.lat, lng: store.lng }}
+                        onClick={() => setSelectedStore(store)}
                     />
                 ))}
+
+                {renderPopup()}
             </Map>
         </APIProvider>
     );
