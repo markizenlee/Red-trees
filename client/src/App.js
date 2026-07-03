@@ -13,14 +13,7 @@ import ContactUs from "./pages/ContactUs";
 import Footer from "./components/Footer";
 
 function AppContent() {
-  const [message, setMessage] = useState("Loading...");
   const location = useLocation();
-
-  useEffect(() => {
-    fetch("/api/message")
-      .then(res => res.json())
-      .then(data => setMessage(data.message));
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -31,7 +24,7 @@ function AppContent() {
       });
     }, { threshold: 0.3 });
 
-    const elements = document.querySelectorAll("section");
+    const elements = document.querySelectorAll(".fade-section");
     elements.forEach(el => observer.observe(el));
 
     return () => observer.disconnect();

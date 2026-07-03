@@ -21,17 +21,18 @@ body {
     box-sizing: border-box;
     background-color: #fcefed;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* fade-in animation */
-section {
+.fade-section {
     opacity: 0.1;
     transform: translateY(20px);
     transition: opacity 2s ease, transform 2s ease;
     will-change: opacity, transform;
 }
 
-section.visible {
+.fade-section.visible {
     opacity: 1;
     transform: translateY(0);
 }

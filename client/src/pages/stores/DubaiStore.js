@@ -7,7 +7,7 @@ import storeD05Image from "../../assets/store-D05.jpg";
 function DubaiStore() {
     return (
         <div>
-            <section className="content">
+            <section className="content fade-section" id="dubai-01">
                 <div className="text-container">
                     <p className="title">
                         Dubai Burjuman Center
@@ -24,7 +24,7 @@ function DubaiStore() {
                 </div>
             </section>
 
-            <section className="content">
+            <section className="content fade-section" id="dubai-02">
                 <div className="text-container">
                     <p className="title">
                         Dubai Al Ghurair Center
@@ -41,7 +41,7 @@ function DubaiStore() {
                 </div>
             </section>
 
-            <section className="content">
+            <section className="content fade-section "id="dubai-03">
                 <div className="text-container">
                     <p className="title">
                         Dubai Arabian Center
@@ -58,7 +58,7 @@ function DubaiStore() {
                 </div>
             </section>
 
-            <section className="content">
+            <section className="content fade-section" id="dubai-04">
                 <div className="text-container">
                     <p className="title">
                         Dubai Dragon Mart 1
@@ -76,7 +76,7 @@ function DubaiStore() {
                 </div>
             </section>
 
-            <section className="content">
+            <section className="content fade-section" id="dubai-05">
                 <div className="text-container">
                     <p className="title">
                         Dubai Mall
