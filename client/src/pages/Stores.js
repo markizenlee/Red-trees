@@ -25,6 +25,8 @@ function Stores() {
         fetchStores();
     }, []);
 
+    console.log(stores);
+
     return (
         <div>
             <section className="store-page">
@@ -51,7 +53,7 @@ function Stores() {
             </section>
 
             <section className="map-section">
-                <StoreMap />
+                <StoreMap stores={stores} />
             </section>
         </div>
     );
