@@ -7,8 +7,19 @@ import DubaiStore from "./stores/DubaiStore";
 import SharjahStore from "./stores/SharjahStore";
 import StoreMap from "../components/StoreMap";
 
+import pin from "../assets/pin_icon.svg";
+
 function Stores() {
     const [stores, setStores] = useState([]);
+    const [selectedStore, setSelectedStore] = useState(null);
+
+    function handleMapIconClick(store) {
+        setSelectedStore(store);
+
+        document.querySelector(".map-section")?.scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 
     useEffect(() => {
         async function fetchStores() {
@@ -46,14 +57,30 @@ function Stores() {
                     <Routes>
                         <Route index element={<Navigate to="dubai" replace />} />
 
-                        <Route path="dubai" element={<DubaiStore />} />
-                        <Route path="sharjah" element={<SharjahStore />} />
+                        <Route path="dubai" element=
+                            {<DubaiStore 
+                                stores={stores}
+                                onMapIconClick={handleMapIconClick}
+                                pin={pin}
+                            />}
+                        />
+                        <Route path="sharjah" element=
+                            {<SharjahStore 
+                                stores={stores}
+                                onMapIconClick={handleMapIconClick}
+                                pin={pin}
+                            />}
+                        />
                     </Routes>
                 </div>
             </section>
 
             <section className="map-section">
-                <StoreMap stores={stores} />
+                <StoreMap 
+                    stores={stores}
+                    selectedStore={selectedStore}
+                    setSelectedStore={setSelectedStore}
+                />
             </section>
         </div>
     );

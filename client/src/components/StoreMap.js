@@ -5,10 +5,9 @@ import { APIProvider, Map, Marker, InfoWindow } from "@vis.gl/react-google-maps"
 const MOBILE_BREAKPOINT = 992;
 const defaultZoom = window.innerWidth < MOBILE_BREAKPOINT ? 11 : 12;
 
-function StoreMap({ stores }) {
-    const [selectedStore, setSelectedStore] = useState(null);
+function StoreMap({ stores, selectedStore, setSelectedStore }) {
     const location = useLocation();
-    
+
     useEffect(() => {
         if (!stores.length) return;
 
@@ -30,7 +29,10 @@ function StoreMap({ stores }) {
 
         return (
             <InfoWindow
-                position={{ lat: selectedStore.lat, lng: selectedStore.lng}}
+                position={{ 
+                    lat: selectedStore.lat, 
+                    lng: selectedStore.lng
+                }}
                 onCloseClick={() => setSelectedStore(null)}
             >
                 <div>
