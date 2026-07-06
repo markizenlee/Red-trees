@@ -2,7 +2,19 @@ import storeS01Image from "../../assets/store-S01.jpg";
 import storeS02Image from "../../assets/store-S02.jpg";
 import storeS03Image from "../../assets/store-S03.jpg";
 
-function SharjahStore() {
+function SharjahStore({ stores, onMapIconClick, pin }) {
+    const sharjah01 = stores.find(
+        (store) => store.id === "sharjah-01"
+    );
+
+    const sharjah02 = stores.find(
+        (store) => store.id === "sharjah-02"
+    );
+
+    const sharjah03 = stores.find(
+        (store) => store.id === "sharjah-03"
+    );
+
     return (
         <div>
             <section className="content fade-section" id="sharjah-01">
@@ -14,6 +26,13 @@ function SharjahStore() {
                     <p className="text">
                         Ground Floor <br /><br />
                     </p>
+
+                    <button
+                        className="map-icon"
+                        onClick={() => onMapIconClick(sharjah01)}
+                    >
+                        <img src={pin} alt="pin" />
+                    </button>
                 </div>
             
                 <div className="image-container">
@@ -31,6 +50,13 @@ function SharjahStore() {
                         First Floor <br /><br />
                         TEL: 06-5522288
                     </p>
+
+                    <button
+                        className="map-icon"
+                        onClick={() => onMapIconClick(sharjah02)}
+                    >
+                        <img src={pin} alt="pin" />
+                    </button>
                 </div>
             
                 <div className="image-container">
@@ -48,6 +74,13 @@ function SharjahStore() {
                         Ground Floor <br /><br />
                         TEL: 06-5500018
                     </p>
+
+                    <button
+                        className="map-icon"
+                        onClick={() => onMapIconClick(sharjah03)}
+                    >
+                        <img src={pin} alt="pin" />
+                    </button>
                 </div>
             
                 <div className="image-container">
