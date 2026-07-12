@@ -1,5 +1,7 @@
 import "./ContactUs.css";
 
+import ContactForm from "../components/ContactForm";
+
 function ContactUs() {
     return (
         <div className="contact-us-page">
@@ -44,6 +46,10 @@ function ContactUs() {
                             @redtreesuae
                         </p>
                     </div>
+                </div>
+
+                <div className="form-container">
+                    <ContactForm />
                 </div>
             </section>
         </div>
