@@ -172,6 +172,7 @@
     border: none;
     white-space: nowrap;
     background-color: #242323;
+    padding: 1vh 2vw;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 0.9vw;
