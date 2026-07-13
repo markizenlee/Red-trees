@@ -17,9 +17,24 @@ function ContactForm() {
         }));
     }
 
-    function handleSubmit(evt) {
+    async function handleSubmit(evt) {
         evt.preventDefault();
-        console.log(form);
+        
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(form)
+            });
+
+            const result = await response.json();
+
+            console.log(result);
+        } catch (error) {
+            console.error("Error submitting form: ", error);
+        }
     }
 
     return (
@@ -60,7 +75,7 @@ function ContactForm() {
                     />
                 </div>
             </div>
-            
+
             <div className="message-section">
                 <div className="message-group">
                     <label htmlFor="message">Message:</label>
