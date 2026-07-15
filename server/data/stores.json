@@ -77,5 +77,15 @@
         "lat": 25.344789,
         "lng": 55.398755,
         "placeId": ""
+    },
+
+    {
+        "id": "abu-dhabi-01",
+        "city": "abudhabi",
+        "storeNumber": 1,
+        "name": "Abu Dhabi Reem Mall",
+        "lat": 24.488369,
+        "lng": 54.400386,
+        "placeId": ""
     }
 ]

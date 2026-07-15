@@ -5,6 +5,7 @@ import "./Stores.css";
 
 import DubaiStore from "./stores/DubaiStore";
 import SharjahStore from "./stores/SharjahStore";
+import AbuDhabiStore from "./stores/AbuDhabiStore";
 import StoreMap from "../components/StoreMap";
 
 import pin from "../assets/pin_icon.svg";
@@ -50,6 +51,10 @@ function Stores() {
                         <li>
                             <Link to="/stores/sharjah">Sharjah</Link>
                         </li>
+
+                        <li>
+                            <Link to="/stores/abudhabi">Abu Dhabi</Link>
+                        </li>
                     </ul>
                 </nav>
 
@@ -64,8 +69,17 @@ function Stores() {
                                 pin={pin}
                             />}
                         />
+
                         <Route path="sharjah" element=
                             {<SharjahStore 
+                                stores={stores}
+                                onMapIconClick={handleMapIconClick}
+                                pin={pin}
+                            />}
+                        />
+
+                        <Route path="abudhabi" element=
+                            {<AbuDhabiStore 
                                 stores={stores}
                                 onMapIconClick={handleMapIconClick}
                                 pin={pin}
