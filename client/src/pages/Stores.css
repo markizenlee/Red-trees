@@ -8,10 +8,10 @@
 .store-page .navigation {
     position: sticky;
     top: calc(var(--header-height) + 4vw);
+    height: 15vh;
     width: 10vw;
     border-right: 1px solid #8d7979;
     padding: 3vw 0vw 3vw 8vw;
-    height: 6vh;
     z-index: 100;
 }
 
@@ -29,6 +29,7 @@
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .store-page .navigation a:hover {
@@ -173,6 +174,14 @@ section {
         flex: 0;
         flex-direction: column;
         margin-bottom: 0;
+    }
+
+    .store-page .map-icon {
+        padding: 1vh 0 0 0;
+    }
+
+    .store-page .map-icon img {
+        width: 5vw;
     }
 
     .store-page .image-container {
