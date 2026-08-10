@@ -1,8 +1,13 @@
 import storeAD01Image from "../../assets/store-AD01.jpg";
+import storeAD02Image from "../../assets/store-AD02.jpg";
 
 function AbuDhabiStore({ stores, onMapIconClick, pin }) {
     const abudhabi01 = stores.find(
         (store) => store.id === "abu-dhabi-01"
+    );
+
+    const abudhabi02 = stores.find(
+        (store) => store.id === "abu-dhabi-02"
     );
 
     return (
@@ -28,6 +33,30 @@ function AbuDhabiStore({ stores, onMapIconClick, pin }) {
 
                 <div className="image-container">
                     <img src={storeAD01Image} alt="store Abu Dhabi 01 image" className="image" />
+                </div>
+            </section>
+
+            <section className="content fade-section" id="abu-dhabi-02">
+                <div className="text-container">
+                    <p className="title">
+                        Abu Dhabi Deerfields Mall
+                    </p>
+
+                    <p className="text">
+                        First Floor <br /><br />
+                        TEL: 02-4429721
+                    </p>
+
+                    <button
+                        className="map-icon"
+                        onClick={() => onMapIconClick(abudhabi02)}
+                    >
+                        <img src={pin} alt="pin" />
+                    </button>
+                </div>
+
+                <div className="image-container">
+                    <img src={storeAD02Image} alt="store Abu Dhabi 02 image" className="image" />
                 </div>
             </section>
         </div>

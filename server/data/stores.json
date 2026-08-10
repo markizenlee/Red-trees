@@ -87,5 +87,15 @@
         "lat": 24.488369,
         "lng": 54.400386,
         "placeId": ""
+    },
+
+    {
+        "id": "abu-dhabi-02",
+        "city": "abudhabi",
+        "storeNumber": 2,
+        "name": "Abu Dhabi Deerfields Mall",
+        "lat": 24.523508,
+        "lng": 54.671128,
+        "placeId": ""
     }
 ]
