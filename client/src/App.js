@@ -35,7 +35,7 @@ function AppContent() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product/*" element={<Product />} />
         <Route path="/brand" element={<Brand />} />
         <Route path="/stores/*" element={<Stores />} />
         <Route path="/contact-us" element={<ContactUs />} />

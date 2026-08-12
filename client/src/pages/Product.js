@@ -1,11 +1,26 @@
+import { Routes, Route, Navigate } from "react-router-dom";
+
 import "./Product.css";
 
-import productImage from "../assets/home-product.jpg";
+import ProductCategory from "./product/ProductCategory";
+import productCategories from "./product/productData";
 
 function Product() {
     return (
         <div className="product">
-            <img src={productImage} alt="product image" className="image" />
+            <Routes>
+                <Route index element={<Navigate to="rings" replace />} />
+
+                {productCategories.map(category => (
+                    <Route
+                        key={category.id}
+                        path={category.id}
+                        element={<ProductCategory category={category} />}
+                    />
+                ))}
+
+                <Route path="*" element={<Navigate to="rings" replace />} />
+            </Routes>
         </div>
     );
 }
