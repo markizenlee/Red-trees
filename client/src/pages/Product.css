@@ -96,13 +96,16 @@
         border-bottom: 1px solid #dad6d6;
         background-color: #fcefed;
         z-index: 100;
+        overflow-x: auto;
     }
 
     .product-navigation ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 4vw;
+        gap: 3vw;
+        width: max-content;
+        min-width: 100%;
         text-align: center;
     }
 
