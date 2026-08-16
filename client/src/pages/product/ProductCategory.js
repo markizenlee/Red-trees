@@ -1,3 +1,5 @@
+import ProductCard from "./ProductCard";
+
 function ProductCategory({ category }) {
     return (
         <section
@@ -16,6 +18,9 @@ function ProductCategory({ category }) {
             </header>
 
             <div className="product-category-products">
+                {category.id === "rings" && (
+                    <ProductCard product={category.products[0]} />
+                )}
             </div>
         </section>
     );
