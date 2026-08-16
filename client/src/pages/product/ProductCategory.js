@@ -1,4 +1,4 @@
-import ProductCard from "./ProductCard";
+import ProductDeck from "./ProductDeck";
 
 function ProductCategory({ category }) {
     return (
@@ -18,9 +18,7 @@ function ProductCategory({ category }) {
             </header>
 
             <div className="product-category-products">
-                {category.id === "rings" && (
-                    <ProductCard product={category.products[0]} />
-                )}
+                <ProductDeck products={category.products} />
             </div>
         </section>
     );
