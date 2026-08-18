@@ -124,6 +124,7 @@
 
 .product-card-name {
     display: block;
+    visibility: hidden;
     font-size: clamp(1rem, 1.25vw, 1.3rem);
     font-weight: 500;
     color: #211f1f;
@@ -131,6 +132,7 @@
 
 .product-card-summary {
     display: block;
+    visibility: hidden;
     width: 100%;
     margin-top: 0.5vw;
     overflow: hidden;
