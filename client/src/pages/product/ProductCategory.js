@@ -1,6 +1,15 @@
+import { useState } from "react";
+
+import FocusedProduct from "./FocusedProduct";
 import ProductDeck from "./ProductDeck";
 
 function ProductCategory({ category }) {
+    const [selectedProduct, setSelectedProduct] = useState(null);
+
+    function handleProductSelect(product) {
+        setSelectedProduct(product);
+    }
+
     return (
         <section
             className="product-category"
@@ -18,8 +27,15 @@ function ProductCategory({ category }) {
             </header>
 
             <div className="product-category-products">
-                <ProductDeck products={category.products} />
+                <ProductDeck
+                    products={category.products}
+                    onProductSelect={handleProductSelect}
+                />
             </div>
+
+            {selectedProduct && (
+                <FocusedProduct product={selectedProduct} />
+            )}
         </section>
     );
 }

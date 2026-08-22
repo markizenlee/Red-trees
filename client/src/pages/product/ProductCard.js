@@ -1,11 +1,16 @@
-function ProductCard({ product }) {
+function ProductCard({ product, onSelect }) {
     const productImage = product.images[0];
+
+    function handleClick() {
+        onSelect(product);
+    }
 
     return (
         <button
             className="product-card"
             type="button"
-            aria-label={`${product.name}. ${product.summary}`}
+            aria-label={product.name}
+            onClick={handleClick}
         >
             <span
                 className="product-card-image"
@@ -15,16 +20,6 @@ function ProductCard({ product }) {
                     backgroundImage: `linear-gradient(135deg, ${productImage.colors[0]}, ${productImage.colors[1]})`
                 }}
             >
-            </span>
-
-            <span className="product-card-footer">
-                <span className="product-card-name">
-                    {product.name}
-                </span>
-
-                <span className="product-card-summary">
-                    {product.summary}
-                </span>
             </span>
         </button>
     );
