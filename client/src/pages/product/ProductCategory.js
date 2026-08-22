@@ -1,13 +1,23 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import FocusedProduct from "./FocusedProduct";
 import ProductDeck from "./ProductDeck";
 
 function ProductCategory({ category }) {
     const [selectedProduct, setSelectedProduct] = useState(null);
+    const openingCardRef = useRef(null);
 
-    function handleProductSelect(product) {
+    function handleProductSelect(product, productCard) {
+        openingCardRef.current = productCard;
         setSelectedProduct(product);
+    }
+
+    function handleProductClose() {
+        setSelectedProduct(null);
+
+        window.requestAnimationFrame(() => {
+            openingCardRef.current.focus({ preventScroll: true });
+        });
     }
 
     return (
@@ -34,7 +44,10 @@ function ProductCategory({ category }) {
             </div>
 
             {selectedProduct && (
-                <FocusedProduct product={selectedProduct} />
+                <FocusedProduct
+                    product={selectedProduct}
+                    onClose={handleProductClose}
+                />
             )}
         </section>
     );

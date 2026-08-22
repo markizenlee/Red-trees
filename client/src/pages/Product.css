@@ -133,6 +133,14 @@
     animation: focused-product-enter 0.4s ease forwards;
 }
 
+.focused-product-layer.closing {
+    animation: focused-layer-exit 0.4s ease forwards;
+}
+
+.focused-product-layer.closing .focused-product {
+    animation: focused-product-exit 0.4s ease forwards;
+}
+
 @keyframes focused-layer-enter {
     from {
         background-color: rgba(225, 211, 207, 0);
@@ -159,6 +167,32 @@
     }
 }
 
+@keyframes focused-layer-exit {
+    from {
+        background-color: rgba(240, 233, 231, 0.2);
+        -webkit-backdrop-filter: blur(12px) saturate(0.8) brightness(0.96);
+        backdrop-filter: blur(12px) saturate(0.8) brightness(0.96);
+    }
+
+    to {
+        background-color: rgba(240, 233, 231, 0);
+        -webkit-backdrop-filter: blur(0) saturate(1) brightness(1);
+        backdrop-filter: blur(0) saturate(1) brightness(1);
+    }
+}
+
+@keyframes focused-product-exit {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(1vw) scale(0.97);
+    }
+}
+
 .focused-product-exit {
     position: absolute;
     top: 2vw;
@@ -175,6 +209,11 @@
     background: none;
     color: #111;
     cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+.focused-product-layer.closing .focused-product-exit {
+    opacity: 0;
 }
 
 .focused-product-exit::before,
@@ -207,7 +246,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 4vw;
-    color: #111;
+    color: transparent;
 }
 
 .focused-product-details h2 {
