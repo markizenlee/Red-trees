@@ -10,7 +10,7 @@ function getCardPosition(index, cardCount) {
     return (index / (cardCount - 1)) * 100;
 }
 
-function ProductDeck({ products }) {
+function ProductDeck({ products, onProductSelect }) {
     const mobileDeckHeight = 7 * (1 + (products.length - 1) * mobileCardVisiblePortion);
 
     return (
@@ -33,7 +33,10 @@ function ProductDeck({ products }) {
                             "--product-layer": index + 1
                         }}
                     >
-                        <ProductCard product={product} />
+                        <ProductCard
+                            product={product}
+                            onSelect={onProductSelect}
+                        />
                     </li>
                 );
             })}
