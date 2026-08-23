@@ -1,5 +1,5 @@
 function ProductCard({ product, onSelect }) {
-    const productImage = product.images[0];
+    const productImage = product.image;
 
     function handleClick(event) {
         onSelect(product, event.currentTarget);
