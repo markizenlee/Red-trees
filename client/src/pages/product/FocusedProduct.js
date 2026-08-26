@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 function FocusedProduct({ product, onClose }) {
     const [isClosing, setIsClosing] = useState(false);
-    const productImage = product.images[0];
+    const productImage = product.image;
     const exitButtonRef = useRef(null);
     const focusedLayerRef = useRef(null);
 

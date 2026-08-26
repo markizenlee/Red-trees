@@ -1,3 +1,8 @@
+html:has(.product),
+body:has(.product) {
+    overflow-x: clip;
+}
+
 .product {
     min-height: 82vh;
     padding: calc(var(--header-height) + 4vw) 0 6vw 0;
